@@ -1,0 +1,192 @@
+:root {
+  --color-violet: hsl(257, 40%, 49%);
+  --color-soft-magenta: hsl(300, 69%, 71%);
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-image: url(./images/bg-mobile.svg);
+  background-color: var(--color-violet);
+  background-repeat: no-repeat;
+  background-position: -10px 0;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    background-image: url(./images/bg-desktop.svg);
+    background-position: 55px 0;
+    background-size: 1180px;
+  }
+}
+
+.container {
+  width: 350px;
+  height: 800px;
+  padding: 25px 0 0 25px;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container-secondary {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 0 95px;
+    gap: 60px;
+  }
+}
+
+.logo {
+  width: 135px;
+  height: 50px;
+}
+
+@media screen and (min-width: 1024px) {
+  .logo {
+    width: 160px;
+  }
+}
+
+.illustration-mockups {
+  width: 300px;
+  height: 260px;
+  padding-top: 40px;
+}
+
+@media screen and (min-width: 1024px) {
+  .illustration-mockups {
+    width: 637px;
+    height: 510px;
+  }
+}
+
+.heading {
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 35px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  padding: 45px 25px 0 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .heading {
+    text-align: left;
+    margin: 100px 0 0 0;
+  }
+}
+
+.description {
+  color: white;
+  line-height: 25px;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  text-align: center;
+  padding: 20px 20px 0 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .description {
+    text-align: left;
+    padding-right: 95px;
+  }
+}
+
+.register-button {
+  width: 210px;
+  height: 45px;
+  background-color: white;
+  border: 0;
+  border-radius: 20px;
+  margin: 25px 0 0 45px;
+  color: var(--color-violet);
+}
+
+@media screen and (min-width: 1024px) {
+  .register-button {
+    margin: 25px 0 0 0;
+  }
+}
+
+.register-button:hover {
+  background-color: var(--color-soft-magenta);
+  color: white;
+  transition: 850ms;
+  cursor: pointer;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-right: 35px;
+}
+
+@media screen and (min-width: 1024px) {
+  .social-icons {
+    margin: 130px 0 0 320px;
+  }
+}
+
+.icon {
+  color: white;
+}
+
+.icon:hover {
+  color: var(--color-soft-magenta);
+  transition: 800ms;
+  cursor: pointer;
+}
+
+.icon-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 45px 0 0 15px;
+}
+
+@media screen and (min-width: 1024px) {
+  .icon-circle {
+    transform: scale(1.2);
+  }
+}
+
+.icon-circle:hover {
+  border: 1px solid hsl(300, 69%, 71%);
+  transition: 800ms;
+  cursor: pointer;
+}
+
+.fa-facebook-f {
+  margin-left: 0;
+}
+
+footer {
+  position: relative;
+  bottom: -30px;
+  text-align: center;
+  color: white;
+}
+
+.attribution a {
+  color: burlywood;
+}
